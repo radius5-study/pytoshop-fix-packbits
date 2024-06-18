@@ -3,7 +3,6 @@
 
 
 from setuptools import setup
-from setuptools.extension import Extension
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -12,9 +11,11 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'cython',
-    'numpy',
-    'packbits',
+    "cython",
+    "numpy>=1.11",
+    "six",
+    "typing",
+    "packbits",
 ]
 
 test_requirements = [
@@ -22,22 +23,11 @@ test_requirements = [
 ]
 
 
-try:
-    from Cython.Build import cythonize
-except ImportError:
-    extensions = []
-else:
-    extensions = cythonize([
-        Extension(
-            "pytoshop.packbits",
-            ["pytoshop/packbits.pyx"]
-        )
-    ])
-
+extensions = []
 
 setup(
     name='pytoshop-fix-packbits',
-    version='1.1.0',
+    version='1.1.4',
     description="A Python-based library to write Photoshop PSD files",
     author="original author: Michael Droettboom, modified by: radius5",
     author_email='info@radius5.co.jp',
