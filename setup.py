@@ -39,7 +39,6 @@ setup(
     name='pytoshop-fix-packbits',
     version='1.1.0',
     description="A Python-based library to write Photoshop PSD files",
-    long_description=readme + '\n\n' + history,
     author="original author: Michael Droettboom, modified by: radius5",
     author_email='info@radius5.co.jp',
     url='https://github.com/radius5-study/pytoshop-fix-packbits',
