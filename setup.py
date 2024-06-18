@@ -14,6 +14,7 @@ with open('HISTORY.rst') as history_file:
 requirements = [
     'cython',
     'numpy',
+    'packbits',
 ]
 
 test_requirements = [
@@ -35,13 +36,13 @@ else:
 
 
 setup(
-    name='pytoshop',
-    version='1.2.1',
+    name='pytoshop-fix-packbits',
+    version='1.1.0',
     description="A Python-based library to write Photoshop PSD files",
     long_description=readme + '\n\n' + history,
-    author="Michael Droettboom",
-    author_email='mdboom@gmail.com',
-    url='https://github.com/mdboom/pytoshop',
+    author="original author: Michael Droettboom, modified by: radius5",
+    author_email='info@radius5.co.jp',
+    url='https://github.com/radius5-study/pytoshop-fix-packbits',
     packages=[
         'pytoshop',
         'pytoshop.user'

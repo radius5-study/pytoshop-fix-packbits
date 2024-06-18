@@ -22,10 +22,7 @@ from . import enums
 from . import util
 
 
-try:
-    from . import packbits  # type: ignore
-except ImportError:
-    pass
+import packbits
 
 
 _decompress_params = """

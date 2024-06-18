@@ -2,3 +2,4 @@ cython
 numpy>=1.11
 six
 typing
+packbits
